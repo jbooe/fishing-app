@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fishing.app</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+    <div class="text-center">
+    <div class="container custom-background-color mt-3 my-3">
+
+        <h1>The Zoltar of Fishing</h1>
+        <body class="custom-background-color">
+                
+            <p class="intro">This app is different from other fishing apps you've used before. 
+                 This dosent record your catches, 
+                this tells you which fish to target, and how to catch them.  
+                Just enter the information below.
+            </p>
+        <form>
+            <h5>Let's Get Started!</h5>
+                <section class="calm-windy">
+                    <label for="calm-windy" class="bold">Is it calm or windy?</label>
+                    <br>
+                        <span>Calm</span>
+                            <input id="myRange_1" type="range" name="calm-windy" min="0" max="10" step="1">
+                        <span>Windy</span>
+                        <button type="button" class="btn btn-info" id="wind" >Enter</button>
+                        <div class="answers">
+                            <p id="text"></p>
+                        </div>  
+                </section>
+                <section class="water-clarity">
+                    <label for="water-clarity" class="bold">Is the water clear or dirty?</label>
+                    <br>
+                        <span>Clear</span>
+                            <input id="myRange_2" type="range" name="water-clarity" min="0" max="10" step="1">
+                        <span>Dirty</span>
+                        <button type="button" class="btn btn-info" id="water">Enter</button>
+                        <div class="answers">
+                            <p id="text_2"></p>
+                        </div>
+                </section>
+                <section class="moon">
+                    <label for="new-full" class="bold">Is it a new moon or full moon?</label>
+                    <br>
+                        <span>New Moon</span>
+                            <input id="myRange_3" type="range" name="moon" min="0" max="10" step="1">
+                        <span>Full Moon</span>
+                        <button type="button" class="btn btn-info" id="moon">Enter</button>
+                        <div class="answers">
+                            <p id="text_3"></p>
+                        </div>
+                </section>
+
+                <section id="day-night">
+                    <span class="bold">It is day or night?</span>
+                    <br>
+                        <input id="day" type="radio" name="dayNight" value="day"> day
+                        <input id="night" type="radio" name="dayNight" value="night"> night
+                            <button type="button" class="btn btn-info" id="day_night">Enter</button>
+                            <br>
+                            <div class="answers">
+                            <p id="day-nightResults"></p>
+                            </div>
+                </section>
+                
+                <section id="tide">
+                    <span class="bold">Tide incoming or outgoing?</span>
+                    <br>
+                        <input id="incoming" type="radio" name="tide" value="incoming"> Incoming
+                        <input id="outgoing" type="radio" name="tide" value="outgoing"> Outgoing
+                            <button type="button" class="btn btn-info" id="tidal">Enter</button>
+                            <div class="answers">
+                            <p id="tideResults"></p>
+                            </div>
+                </section>
+                <section>
+                <label for="month" class="bold">What's the month?</label>
+                <br>
+		            <select id="month">
+                        <option value="none">---Select---</option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+		            </select>
+                        <button type="button" class="btn btn-info" id="runfunc">Enter Selected Month</button>
+                        <br>
+                    <div class="answers">
+                        <p id="result"></p>
+                    </div>
+                        <br>
+                </section>  
+            </form>
+        <div>
+                <h2>Now Let's Get Ready to Catch</h2>
+                <br>
+            <dl>
+                <dt>Snook</dt>
+                    <dd>
+                    Snook often are found around structure, find the common bait fish located in the same area.  Typically
+                    this will be Pilchards, Pinfish, Grunts, finger Mullet, and Ballyhoo.  Shrimp or a small crustation will also
+                    work at times.  For artificals, use ones that best mimics the local bait fish. A soft paddle tail with a jig head 
+                    is good bet.  A silver spoon also works well.
+                    </dd>
+                <dt>Redfish</dt>
+                    <dd>
+                    Redfish's favorite food are crustaceans, typically shrimp.  You can also catch them using local bait fish but this isn't 
+                    always the case.  For artificals, use a Gulp or DOA shrimp on a jig head with a poping cork. A gold spoon also works well.
+                    </dd>
+                <dt>Sea Trout</dt>
+                    <dd>
+                    The Sea Trout will be caught using the same bait as the Snook or Redfish.  Because of the size difference,
+                    the bait fish typically need to be smaller.  Also, you might want to use a weedless hook or a poping cork 
+                    due to Sea Trout often are found in sea grass.
+                    </dd>
+                <dt>Tarpon</dt>
+                    <dd>
+                    Tarpon, also known as "Silver Kings", won't be as picky about food due to their incredible size. For them, it's all about
+                    location.  If you see the Tarpon rolling on top of the water, your best bet is a bait fish under a cork.  If they are 
+                    in the area, but are staying low, you will want to use a big chuck of cut bait on the bottom.  If a strong outgoing
+                    tide is present, small crabs floting free in the water is your best bet. 
+                    </dd>
+                <dt>Grouper</dt>
+                    <dd>
+                    Grouper are found on bottom on or near structure.  The like both cutbait and live bait suck as Pinfish or
+                    Sardines.  It's best practice to use cut bait first to get the bite going, then move to live bait.
+                    </dd>
+                <dt>Kingfish and Spanish Mackerel</dt>
+                    <dd>
+                    The Kingfish and Spanish Mackerel are closely related.  They both love "shinny" fast moving lures.  Use a silver
+                    spoon or a varient.  They both also love a live baitfish.  Blue Runners and Ballyhoo typically work the best for Kingfish.  
+                    Spanish Mackerel will take a wide range of baitfish. You will often find either of these fish around large schools of baitfish. 
+                    </dd>
+                <dt>Snapper</dt>
+                    <dd>
+                    Snapper are the most complex due to thier wide range of species.  All Snapper love live baitfish and cutbait alike.
+                    The biggest difference between all of them is the depth in which you find them.  It is best practice to use chum to draw
+                    in the fish.  Fish in or near the slick of the current taking the chum out.  
+                    </dd>
+            </dl>
+        </div>
+        <a href="page-2.html" class="btn btn-danger">Time to eat</a>
+    </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous"></script>
+    
+           
+        </body>
+</html>

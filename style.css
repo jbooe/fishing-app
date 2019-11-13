@@ -1,0 +1,49 @@
+h1  {
+    color: black;
+    font-family: cursive;
+}
+
+h5 {
+    color: black;
+}
+
+}
+
+#rounded {
+    border-radius: 1rem;
+}
+
+.custom-border-width {
+    border-width: 5px !important;
+    }
+
+.custom-background-color {
+    background-color: aqua;
+}
+
+.intro {
+    font-size: larger;
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.custom-font-type {
+    font-style: initial;
+}
+
+#custom-border {
+    border-width: 3px;
+}
+
+.answers {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+#eat {
+    font-family: fantasy;
+}
