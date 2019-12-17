@@ -5,6 +5,8 @@ let wind = document.getElementById("wind");
 let tide = document.getElementById("tidal");
 let month = document.getElementById("runfunc");
 
+// the documented fishing information 
+
 let octMsg = "The month of October has perfect fishing weather.  The Snook are feeding great this month, the Redfish are "+
 "everywhere and the large Trout are getting easier to catch.  Grouper are moving closer to inshore and the Snapper "+
 "are close behind. Kingfish are begining thier migration moving down the coast from up the north";
@@ -79,9 +81,7 @@ let lowTide = "During the tidal shift, the current increases causing bait to mov
 "Redfish waiting by the edge of the mangroves ready to ambush bait. Another advantage is the pooling of fish.  This means the fish "+
 "get concentrated in the deep areas of the flats also known as holes."  
 
-window.onload = function () {
-    document.getElementById("splash").onplay();
-}
+//function that returns the selected wind information
 
 const windValue = () => {
   let x = document.getElementById("myRange_1");
@@ -95,7 +95,12 @@ const windValue = () => {
     return document.getElementById("text").innerHTML = windHeavy;
   }
 }
+
+//the click event that triggers the display for wind information
+
 wind.onclick = windValue;
+
+//function that returns the selected water clairty information
 
 const waterClairty = () => {
   let x = document.getElementById("myRange_2");
@@ -109,7 +114,12 @@ const waterClairty = () => {
     return document.getElementById("text_2").innerHTML = waterDirty;
   }
 }
+
+//the click event that triggers the display for the water clairty information
+
 water.onclick = waterClairty;
+
+//function that returns the selected moon phase information
 
 const moonPhase = () => {
   let x = document.getElementById("myRange_3");
@@ -123,7 +133,12 @@ const moonPhase = () => {
     return document.getElementById("text_3").innerHTML = fullMoon;
   }
 }
+
+//the click event that triggers the display for moon phase information
+
 moon.onclick = moonPhase;
+
+//function that returns the selected day or night information
 
 const dayNight = () => {
 
@@ -134,7 +149,12 @@ const dayNight = () => {
       document.getElementById("day-nightResults").innerHTML = nightTime;
   } 
 }
+
+//the click event that triggers the display for day or night information
+
 day.onclick = dayNight;
+
+//function that returns the selected tide information
 
 const tideCheck = () => {
 
@@ -145,8 +165,12 @@ const tideCheck = () => {
       document.getElementById("tideResults").innerHTML = lowTide;
   }
 }
+
+//the click event that triggers the display for tidal information
+
 tide.onclick = tideCheck;
 
+//function that returns the selected month information
 
 const getMonth = () => {
   let e = document.getElementById("month");
@@ -178,4 +202,7 @@ const getMonth = () => {
     document.getElementById("result").innerHTML = sepMsg;
   }
 }
+
+//the click event that triggers the display for month information
+
 month.onclick = getMonth;
